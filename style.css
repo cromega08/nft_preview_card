@@ -1,0 +1,177 @@
+:root {
+    --main: #252525;
+    --second: #6930C3;
+    --third: #64DFDF;
+    --contrast: #80FFDB;
+}
+
+body {
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--second);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+aside {
+    background-color: rgba(0, 0, 0, 0.384);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+aside > div {
+    aspect-ratio: 1/1;
+    width: 80vw;
+    font-size: 2em;
+    text-align: center;
+    color: var(--contrast);
+    background-color: var(--main);
+    box-shadow: 1vw .75vh 0 0 var(--second);
+    border-radius: 1em;
+    padding: 1em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+aside > div > h1 {
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+aside > div > img {
+    width: 45vw;
+    border: .25em solid var(--third);
+    border-radius: 1em;
+    box-shadow: 1vw .75vh 0 0 var(--second);
+}
+
+aside > div > a:link, a:visited {
+    color: var(--second);
+    text-decoration: none;
+    margin: 0;
+    position: relative;
+    left: 30vw;
+}
+
+aside:target {
+    transition: 500ms;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1;
+}
+
+footer {
+    color: var(--main);
+}
+
+footer > a:link, a:visited {
+    text-decoration: none;
+    color: var(--contrast);
+    font-size: 1.1em;
+    font-weight: 550;
+}
+
+section {
+    aspect-ratio: 9/16;
+    width: 20em;
+    padding: 1.5em;
+    background-color: var(--main);
+    color: var(--second);
+    box-shadow: .75em .5em 0 0 var(--third);
+    border-radius: 1em;
+    display: grid;
+    justify-content: center;
+}
+
+img {
+    aspect-ratio: 1/1;
+    width: 5em;
+    border-radius: 50%;
+    box-shadow: 0 0 .3em var(--third);
+}
+
+label {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+label > img {
+    width: 20em;
+    max-width: 25em;
+    max-height: 25em;
+    border-radius: 1em;
+}
+
+label:hover #img_box {
+    display: grid;
+}
+
+#background {
+    aspect-ratio: 1/1;
+    width: 20em;
+    border-radius: 1em;
+    background-color: var(--third);
+    opacity: .3;
+    position: absolute;
+}
+
+#img_box {
+    display: none;
+    place-items: center;
+    position: absolute;
+}
+
+#offer {
+    width: 19em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#creator {
+    width: 19em;
+    border-top: solid;
+    padding: .5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#ether {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#ether > p {
+    margin: 0 0 0 1em;
+    color: #08fcfc;
+}
+
+#title {
+    font-size: 1.2em;
+    font-weight: 900;
+    justify-self: flex-start;
+}
+
+#limit {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#author {
+    font-size: 1.2em;
+    font-weight: 900;
+}
