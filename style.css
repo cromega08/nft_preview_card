@@ -15,6 +15,18 @@ body {
     align-items: center;
 }
 
+section {
+    aspect-ratio: 9/16;
+    width: 20em;
+    padding: 1.5em;
+    background-color: var(--main);
+    color: var(--second);
+    box-shadow: .75em .5em 0 0 var(--third);
+    border-radius: 1em;
+    display: grid;
+    justify-content: center;
+}
+
 aside {
     background-color: rgba(0, 0, 0, 0.384);
     opacity: 0;
@@ -30,7 +42,6 @@ aside {
 }
 
 aside > div {
-    aspect-ratio: 1/1;
     width: 80vw;
     font-size: 2em;
     text-align: center;
@@ -72,6 +83,7 @@ aside:target {
 }
 
 footer {
+    text-align: center;
     color: var(--main);
 }
 
@@ -80,18 +92,6 @@ footer > a:link, a:visited {
     color: var(--contrast);
     font-size: 1.1em;
     font-weight: 550;
-}
-
-section {
-    aspect-ratio: 9/16;
-    width: 20em;
-    padding: 1.5em;
-    background-color: var(--main);
-    color: var(--second);
-    box-shadow: .75em .5em 0 0 var(--third);
-    border-radius: 1em;
-    display: grid;
-    justify-content: center;
 }
 
 img {
@@ -109,8 +109,6 @@ label {
 
 label > img {
     width: 20em;
-    max-width: 25em;
-    max-height: 25em;
     border-radius: 1em;
 }
 
@@ -174,4 +172,62 @@ label:hover #img_box {
 #author {
     font-size: 1.2em;
     font-weight: 900;
+}
+
+@media (max-width: 401px) {
+    body {
+        justify-items: left;
+    }
+    section {
+        width: 72.5vw;
+        padding: 3vh 10vw;
+    }
+    
+    aside > div {
+        width: 90vw;
+        padding: .275em
+    }
+    
+    footer {
+        font-size: 1.15em;
+        justify-self: center;
+    }
+
+    label > img {
+        width: 77.5vw;
+    }
+
+    #background {
+        width: 77.5vw;
+    }
+
+    #offer {
+        width: 75vw;
+        margin: 0 .5em;
+        font-size: 1.1em;
+    }
+
+    #creator {
+        width: 75vw;
+        padding-top: 1em;
+    }
+
+    #title {
+        font-size: 1.5em;
+        margin: 0;
+        margin-top: .35em;
+    }
+
+    #limit {
+        font-size: 1.3em;
+    }
+
+    #author {
+        font-size: 1.3em;
+    }
+    #description {
+        font-size: 1.3em;
+        margin: 0;
+        margin-top: .3em;
+    }
 }
