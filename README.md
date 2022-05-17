@@ -16,10 +16,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
-
 ### The challenge
 
 Users should be able to:
@@ -29,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/design/Cromega_Solution.png)
+![Cromega_Solution](/design/Cromega_Solution.png)
 
 ### Links
 
@@ -55,9 +51,9 @@ As mentioned before, the main thing i learned was responsive design.
 
 Had problems with the condition of make it responsive for diferents screen sizes because the card scaled with the screen size, but figured out how to resolve it.
 
-My first implementation of a @media query:
+My first implementation of a @media query in css:
 
-~~~css
+~~~
 @media (max-width: 401px) {
     body {
         justify-items: left;
